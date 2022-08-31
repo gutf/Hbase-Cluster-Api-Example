@@ -1,0 +1,10 @@
+server:
+  port: 3001
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: hbase-api
+hbase:
+  conn:
+    quorum: ${HBASE_QUORUM:192.168.204.131,192.168.204.132,192.168.204.133}
